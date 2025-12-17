@@ -1,0 +1,21 @@
+services:
+  backend:
+    build: ./Backend
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./Backend/.env
+    networks:
+      - devops-net
+
+  frontend:
+    build: ./Frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - devops-net
+
+networks:
+  devops-net:
