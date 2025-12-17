@@ -5,7 +5,7 @@ import { ArrowRight, Sparkles, Zap, Trophy, Users, Target, Gamepad2 } from 'luci
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-slate-950">
+    <main className="min-h-screen bg-slate-850">
       {/* Navigation */}
       <nav className="sticky top-0 z-50 border-b border-slate-700 bg-slate-950/95 backdrop-blur-sm">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
